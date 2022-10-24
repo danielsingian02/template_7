@@ -79,7 +79,7 @@
 									</a>
 									
 									<a href="#" class="login__register">
-										Regsiter
+										Register
 									</a>
 								</div>
 
