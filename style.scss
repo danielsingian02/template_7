@@ -375,3 +375,114 @@ footer {
         padding: 0;
     }
 }
+
+// Single Page
+.single-page {
+    padding: 5rem 0;
+    color: black;
+
+    & header {
+    
+    }
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }    
+
+    // Content container
+    & article {
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 12px;
+
+        & img {
+            width: 100%;
+        }
+
+        @media #{ $media_tablet } {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0;
+        }
+    }
+
+    // Comments
+    & .comments h2, & .lreply {  
+        color: black;
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+
+    & .comments-header {
+        background-color: white;
+    }
+
+    & .comment-form-comment {
+        display: flex;
+        flex-direction: column;
+
+        & > textarea {
+            margin-top: 1rem;
+            padding: 1rem;
+            resize: none;
+        }
+
+    }
+
+    & input {
+        width: 100%;
+    }
+
+    & .comment-form-cookies-consent {
+        display: flex;
+        flex-direction: row;
+
+        & > input {
+            width: fit-content;
+            margin-right: 1rem;
+        }
+    }
+
+    & .content .form-submit > .submit {
+        background-color: white;
+        border: 2px solid transparent;
+        padding: 1rem 1rem;
+        color: white;
+        font-weight: 700;
+
+        &:hover {
+            background-color: white;
+            border-color: white;
+            color: white;
+        }
+    }
+
+    // Comments per User
+    & .comments-inner {
+        
+        // User comment container
+        & .byuser {
+            // display: flex;
+            width: 100%;
+
+            & > .comment-author {
+                // display: flex;
+                width: 100%;
+            }
+
+            & + .byuser {
+                border-top: 2px solid white;
+                margin-top: 1rem;
+                padding-top: 1rem;
+            }
+        }
+
+        & img {
+            max-height: 4rem;
+            max-width: 4rem;
+        }
+    }
+}
