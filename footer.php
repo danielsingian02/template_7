@@ -1,7 +1,6 @@
 <?php
 	wp_footer();
 ?>
-			</div><!-- .main ending tag -->
 		</div> <!-- .body ending tag -->
 	</div> <!-- .grid__ctn ending tag -->
 	
